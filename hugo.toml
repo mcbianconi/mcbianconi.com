@@ -1,0 +1,4 @@
+baseURL = 'https://mcbianconi.com'
+languageCode = 'pt-br'
+title = 'MCBianconi'
+# theme = "hyde"
