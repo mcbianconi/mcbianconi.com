@@ -3,8 +3,9 @@
 # https://blowfish.page/docs/getting-started/
 
 # theme = "blowfish"
-# baseURL = "https://your_domain.com/"
-defaultContentLanguage = "en"
+baseURL = "https://mcbianconi.com/"
+
+defaultContentLanguage = "pt-br"
 
 pluralizeListTitles = true # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
@@ -32,7 +33,11 @@ googleAnalytics = "G-ZV1XPSLG2G"
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = [
+    "HTML"
+    # , "RSS"
+    # , "JSON"
+  ]
 
 [related]
   threshold = 0

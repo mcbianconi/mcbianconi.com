@@ -1,10 +1,21 @@
 baseURL = "https://mcbianconi.com/"
-languageCode = "en"
+
+languageCode = "pt-br"
 enableRobotsTXT = true
 paginate = 10
-defaultContentLanguage = "en"
+
+defaultContentLanguage = "pt-br"
 
 summaryLength = 0
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML"
+    # , "RSS"
+    # , "JSON"
+]
+
+[languages.en]
+contentDir = "content/en"
+
+[languages.pt-br]
+contentDir = "content"
