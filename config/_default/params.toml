@@ -12,8 +12,8 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["posts"]
-# robots = ""
+mainSections = ["posts", "projects"]
+robots = "all"
 
 disableImageOptimization = false
 disableTextInHeader = false
@@ -73,7 +73,7 @@ highlightCurrentMenuArea = true
   showTaxonomies = false
   showAuthorsBadges = false
   showWordCount = true
-  sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = [ "linkedin", "twitter", "reddit", "email", "whatsapp", "telegram"] # "pinterest", "facebook"
   showZenMode = true
 
 [list]
