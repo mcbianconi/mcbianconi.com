@@ -16,8 +16,8 @@ title = "MCBianconi"
 [author]
   name = "Murillo Cesar Bianconi"
   image = "img/blowfish_logo.png"
-  headline = "Apenas um humano"
-  bio = "Um pouco sobre mim"
+  headline = "Em uma missão"
+  bio = "Em uma missão"
   links = [
     # { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },

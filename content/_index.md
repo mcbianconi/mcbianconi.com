@@ -1,5 +1,7 @@
 ---
 title: "Bem vindo!"
-description: "Seja bem vindo ao meu site"
+description: "Seja bem vindo ao meu espaço"
 ---
-Bem vindo ao meu site! Fico feliz que tenha parado por aqui, espero que encontre algo bom pra você!
+Bem vindo ao meu espaço! 
+
+Espero que encontre algo interessante pra você.

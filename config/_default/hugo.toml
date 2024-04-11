@@ -19,13 +19,7 @@ buildFuture = false
 googleAnalytics = "G-ZV1XPSLG2G"
 
 [imaging]
-  anchor = 'Center'
-
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  author = "authors"
-  series = "series"
+  anchor = 'Center'  
 
 [sitemap]
   changefreq = 'daily'
