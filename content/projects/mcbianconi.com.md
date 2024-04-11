@@ -2,8 +2,7 @@
 title: "Este site"
 date: 2024-04-10T22:03:16-03:00
 description: "Meu espaço pessoal"
-tags: ["hugo", "golang"]
-categories: [projeto]
+tags: ["hugo"]
 ---
 
 {{< github repo="mcbianconi/mcbianconi.com" >}}
@@ -21,7 +20,7 @@ Resolvi criar um ambiente onde pudesse me posicionar da forma que achasse melhor
 Penso que poderia dedicar tempo em fazer isso em uma rede social, mas me agrada a experiência de manter um ambiente gerenciado por mim.
 
 Um pouco controverso usar o [hugo](https://gohugo.io/) tecnologia para fazer isso, sendo um programador Python? Talvez, mas a verdade é que
-gostei da forma como as coisas funcionam por lá e me desafia a sair um pouco da zona de conforto e usar um pouco de go. O tema que escolhi para começar é o [blowfish](https://blowfish.page/).
+gostei da forma como as coisas funcionam por lá e me desafia a sair um pouco da zona de conforto e entender um pouco de go. O tema que escolhi para começar é o [blowfish](https://blowfish.page/).
 
 O deploy do projeto está na CloudFlare e eu manifesto ele no meu projeto de infraestrutura: {{< article link="/projects/iac/" >}}
 
