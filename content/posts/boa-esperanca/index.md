@@ -52,7 +52,7 @@ A decadência do lugar e o fim que ela tomou, refletem simbolicamente esse senti
 Ver essa imagem e ler esse relato mexeram com esse veterano.
 
 ## Como era
-![Sede da fazenda boa esperança](gallery/boa-esperanca.jpg "Símbolo do nosso curso")
+![Sede da fazenda boa esperança](gallery/sede-1.jpg "Símbolo do nosso curso")
 
 
 Foi perdida a chance de reestruturar, reerguer e preservar esse lugar, como símbolo que era. Quando as coisas vão pro chão, pouco importa se isso era legalmente possível ou não.
