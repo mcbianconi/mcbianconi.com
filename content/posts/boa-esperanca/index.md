@@ -5,7 +5,7 @@ draft = false
 description = 'Uma reflexão sobre o simbolismo da demolição sede da Fazenda Boa Esperança.'
 summary = 'Uma reflexão sobre o simbolismo da demolição da sede da Fazenda Boa Esperança.'
 showHero = false
-tags = ["pensamentos"]
+tags = ["pensamentos", "EB"]
 +++
 
 {{< lead >}}
