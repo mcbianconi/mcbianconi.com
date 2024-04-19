@@ -2,7 +2,8 @@
 title: "Infra como código"
 date: 2024-04-06T21:16:29-03:00
 description: "Infra como código para gerenciamento dos meus projetos pessoais"
-tags: ["terraform"]
+tags: ["terraform", "projetos"]
+summary: 'Projeto de gerenciamento da infraestrutura pessoal, incluindo este site, utilizando Terraform para manter tudo como código e facilitar o aprendizado prático.'
 ---
 
 {{< github repo="mcbianconi/infra" >}}
