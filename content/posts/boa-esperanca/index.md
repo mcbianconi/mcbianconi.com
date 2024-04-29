@@ -75,3 +75,6 @@ Ficam aqui, como recordação para os que passaram e motivação para os que vir
 {{< youtubeLite id="m2Ny2IA44CE" label="Blowfish-tools demo" >}}
 
 Aço.
+
+
+{{< chat boa-esperanca >}}
