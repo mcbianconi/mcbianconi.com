@@ -31,5 +31,8 @@ clean:
 	@hugo --gc
 	@rm -rf public
 
-.PHONY: post project page dev build deploy clean
+update-theme:
+	git submodule update --remote --merge
+
+.PHONY: post project page dev build deploy clean update-theme
 	
