@@ -5,9 +5,9 @@
 theme = "blowfish"
 baseURL = "https://mcbianconi.com/"
 
-defaultContentLanguage = "pt-br"
+defaultContentLanguage = "pt-BR"
 
-pluralizeListTitles = true # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+pluralizeListTitles = true # https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
 paginate = 10
@@ -34,7 +34,7 @@ googleAnalytics = "G-ZV1XPSLG2G"
   ]
 
 [related]
-  threshold = 0
+  threshold = 1
   toLower = false
 
     [[related.indices]]

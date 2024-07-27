@@ -1,0 +1,21 @@
+" code":
+  copy: Copiar
+  copied: Copiado
+
+" search":
+  open_button_title: Buscar
+
+article:
+  zen_mode_title:
+    enable: Ativar Modo Zen
+    disable: Desativar Modo Zen
+
+sharing:
+  whatsapp: Enviar pelo WhatsApp
+  telegram: Enviar pelo Telegram
+
+Tarot: Tarô
+tarot: tarô
+
+Categories:
+  Tarot-Do-Dia: Tarô diário

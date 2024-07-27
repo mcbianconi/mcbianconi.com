@@ -1,10 +1,8 @@
 baseURL = "https://mcbianconi.com/"
 
-languageCode = "pt-br"
+languageCode = "pt-BR"
 enableRobotsTXT = true
 paginate = 10
-
-defaultContentLanguage = "pt-br"
 
 summaryLength = 0
 
@@ -14,8 +12,23 @@ home = ["HTML"
     # , "JSON"
 ]
 
-[languages.en]
-contentDir = "content/en"
 
-[languages.pt-br]
-contentDir = "content"
+[languages]
+
+  [languages.pt-BR]
+    contentDir = 'content/pt-BR'
+    disabled = false
+    languageCode = 'pt-BR'
+    languageDirection = 'ltr'
+    languageName = 'Português'
+    weight = 1
+    # [languages.pt-BR.params]
+    #   subtitle = 'Reference, Tutorials, and Explanations'
+
+  [languages.en]
+      contentDir = 'content/en'
+  #     disabled = false
+  #     languageCode = 'en'
+  #     weight = 2
+  #     [languages.en.params]
+  #       subtitle = 'Referenz, Tutorials und Erklärungen'

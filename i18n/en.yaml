@@ -1,0 +1,15 @@
+" code": 
+  copy: Copy
+  copied: Copied
+
+" search":
+  open_button_title: Search
+
+article:
+  zen_mode_title:
+    enable: Enable Zen Mode
+    disable: Disable Zen Mode
+
+sharing:
+  whatsapp: Share with WhatsApp
+  telegram: Share with Telegram

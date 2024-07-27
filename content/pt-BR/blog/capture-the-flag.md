@@ -3,6 +3,7 @@ title = 'Capture the Flag'
 date = 2024-05-17T13:17:02-03:00
 draft = false
 description = 'Como eu fiquei 10° colocado no Brasil em competições hacker enquanto era Oficial do Exército na fronteira'
+tags = ['tech']
 +++
 
 Lembrando de 2018, quando estudava cybersegurança e participava de campeonatos de Capture the flag - uma espécie de competição onde os times precisam hackear servidores para obter acesso as "flags", que são códigos que comprovam o êxito na exploração de alguma falha de segurança.

@@ -1,8 +1,11 @@
 ---
-title: "Infra como código"
+title: "Infra como codigo"
+slug: infra-como-codigo
 date: 2024-04-06T21:16:29-03:00
 description: "Infra como código para gerenciamento dos meus projetos pessoais"
-tags: ["terraform", "projetos"]
+tags: ["terraform", "tech"]
+categories: 
+    - projetos
 summary: 'Projeto de gerenciamento da infraestrutura pessoal, incluindo este site, utilizando Terraform para manter tudo como código e facilitar o aprendizado prático.'
 ---
 

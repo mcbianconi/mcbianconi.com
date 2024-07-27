@@ -2,7 +2,9 @@
 title: "Este site"
 date: 2024-04-10T22:03:16-03:00
 description: "Meu espaço pessoal"
-tags: ["hugo", "projetos"]
+tags: ["hugo", "tech"]
+categories:
+    - projetos
 summary: 'Site pessoal desenvolvido com Hugo para compartilhar projetos, pensamentos e artes.'
 ---
 
