@@ -1,5 +1,5 @@
 ---
-title: "Leitura de tarô do dia{{ .Date | time.Format ":date_medium" }}"
+title: "Leitura de tarô do dia {{ .Date | time.Format ":date_medium" }}"
 date: {{ time.Now.Format "2006-01-02" }}
 draft: true
 description: "Leitura de Leitura de tarô do dia {{ .Date | time.Format ":date_long" }} e sua explicação"
