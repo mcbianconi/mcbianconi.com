@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://mcbianconi.com/"
+# baseURL = "https://mcbianconi.com/"
 
 defaultContentLanguage = "pt-BR"
 
