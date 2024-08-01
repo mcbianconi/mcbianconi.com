@@ -2,7 +2,6 @@
 title: "Os 22 Arcanos Maiores do Tarot"
 description: "Os 22 Arcanos Maiores do Tarô, suas representações e significados. Descubra como essas cartas podem guiar e transformar sua jornada pessoal."
 date: 2024-07-02T13:43:29-03:00
-draft: true
 categories: 
     - tarot
 ---
