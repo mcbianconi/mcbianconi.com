@@ -1,8 +1,8 @@
 # Variables
 SHELL := /bin/bash
-TODAY := $(shell date +%d-%m-%Y)
 CONTENT_DIR := content/pt-BR/blog
-TAROT_FILE := $(CONTENT_DIR)/tarot-do-dia/$(TODAY).md
+TAROT_FILE_DIR := $(CONTENT_DIR)/tarot-do-dia/$(shell date +%Y/%m)
+TAROT_FILE := $(TAROT_FILE_DIR)/tiragem-diaria-dia-$(shell date +%d).md
 
 img-post:
 	@read -p "Novo post: " postname; \
@@ -36,6 +36,7 @@ missing-translation:
 tarot-do-dia:
 	@echo "Criando leitura para $(TODAY)"
 	@hugo new --kind tarot $(TAROT_FILE)
+	@mkdir -p $(TAROT_FILE_DIR) 2>/dev/null
 	@echo "Criado $(TAROT_FILE)"
 
 .PHONY: post project page dev build deploy clean update-theme

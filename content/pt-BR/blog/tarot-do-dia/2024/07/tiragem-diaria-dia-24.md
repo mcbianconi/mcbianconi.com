@@ -1,8 +1,8 @@
 ---
-title: "Leitura de Leitura de tarô do dia 24 de julho de 2024"
+title: "Leitura de tarô do dia 24 de julho de 2024"
 date: 2024-07-24T09:11:02-03:00
 draft: true
-description: "Leitura de Leitura de tarô do dia 23 de julho de 2024 e sua explicação"
+description: "Leitura de tarô do dia 23 de julho de 2024 e sua explicação"
 tarot: A Temperança
 categories:
     - Tarot

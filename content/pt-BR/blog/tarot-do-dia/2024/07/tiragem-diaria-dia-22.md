@@ -2,7 +2,7 @@
 title: "Leitura de tarô do dia 22 de jul. de 2024"
 date: 2024-07-22T13:09:02-03:00
 draft: true
-description: "Leitura de Leitura de tarô do dia 22 de julho de 2024 e sua explicação"
+description: "Leitura de tarô do dia 22 de julho de 2024 e sua explicação"
 tarot: O Sol
 categories:
     - Tarot

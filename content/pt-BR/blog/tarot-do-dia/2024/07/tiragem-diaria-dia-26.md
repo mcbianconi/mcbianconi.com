@@ -28,4 +28,4 @@ Procurar Paz Interna: Aproveite o dia para buscar a paz interna. Meditação, at
 
 Mesmo que a carta possa parecer negativa à primeira vista, ela oferece uma oportunidade para introspecção e crescimento. Use essa energia para se fortalecer e preparar melhor para os desafios futuros.
 
-[Sobre o Cinco de Espadas]({{< ref "tarot/cinco-de-espadas" >}} "O ???")
+[Sobre o Cinco de Espadas]({{< ref "tarot/cinco-de-espadas" >}})

@@ -2,7 +2,7 @@
 title: "Leitura de tarô do dia 25 de jul. de 2024"
 date: 2024-07-26
 draft: true
-description: "Leitura de Leitura de tarô do dia 25 de julho de 2024 e sua explicação - dia fora do tempo e meu aniversário"
+description: "Leitura de tarô do dia 25 de julho de 2024 e sua explicação - dia fora do tempo e meu aniversário"
 tarot: Dois de Ouros
 categories:
     - Tarot

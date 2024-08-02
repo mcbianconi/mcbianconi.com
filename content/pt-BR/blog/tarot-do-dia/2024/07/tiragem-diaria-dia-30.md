@@ -2,7 +2,7 @@
 title: "Leitura de tarô do dia 31 de jul. de 2024"
 date: 2024-07-31
 draft: true
-description: "Leitura de Leitura de tarô do dia 31 de julho de 2024 e sua explicação"
+description: "Leitura de tarô do dia 31 de julho de 2024 e sua explicação"
 tags: ["tarot"]
 tarot: 'O Enforcado'
 categories:

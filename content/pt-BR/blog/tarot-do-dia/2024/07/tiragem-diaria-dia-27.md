@@ -1,7 +1,7 @@
 ---
 title: "Leitura de tarô do dia 27 de jul. de 2024"
 date: 2024-07-27
-description: "Leitura de Leitura de tarô do dia 27 de julho de 2024 e sua explicação"
+description: "Leitura de tarô do dia 27 de julho de 2024 e sua explicação"
 tags: ["tarot"]
 tarot: Quatro de paus
 categories:

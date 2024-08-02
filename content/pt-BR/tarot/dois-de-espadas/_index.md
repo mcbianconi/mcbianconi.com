@@ -1,6 +1,6 @@
 ---
-title: "O Enforcado"
-description: "Descubra o significado profundo da carta do Enforcado no tarot e como ela pode oferecer lições transformadoras para sua vida."
+title: "Dois de Espadas"
+description: "Equiíbrio e decisões difíceis - descubra o significado do dois de espadas no tarot e como ela pode oferecer lições transformadoras para sua vida."
 ---
 
 
