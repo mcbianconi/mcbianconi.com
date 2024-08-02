@@ -90,4 +90,4 @@ Ela nos faz lembrar que, se mudanças podem ser difíceis, elas são muitas veze
 Em momentos de indecisão ou luta, essa carta nos estimula a mover em frente, esperando o passado e abraçando oportunidades de um novo começo.
 
 
-<!-- [Outros arcanos]({{< ref "tarot" >}}) -->
+[Outros arcanos]({{< ref "tarot" >}})

@@ -39,4 +39,9 @@ tarot-do-dia:
 	@mkdir -p $(TAROT_FILE_DIR) 2>/dev/null
 	@echo "Criado $(TAROT_FILE)"
 
+arcano:
+	@read -p "Nome do arcano: " arcano; \
+	mkdir content/pt-BR/tarot/$$arcano; \
+	hugo new --kind arcano content/pt-BR/tarot/$$arcano/_index.md;
+
 .PHONY: post project page dev build deploy clean update-theme
