@@ -53,6 +53,10 @@ languages:
     languageName: "English"
     weight: 2
 
+taxonomies:
+  tecnica: tecnicas
+  technique: techniques
+
 caches:
   images:
     dir: :cacheDir/images
