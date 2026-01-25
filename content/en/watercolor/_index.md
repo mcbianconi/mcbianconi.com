@@ -1,5 +1,0 @@
----
-title: Watercolors
----
-
-{{< gallery "watercolor" >}}

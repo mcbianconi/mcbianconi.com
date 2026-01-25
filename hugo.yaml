@@ -46,13 +46,11 @@ languages:
   pt:
     title: "Meu site"
     languageName: "Português"
-    contentDir: "content/pt"
     weight: 1
 
   en:
     title: "My site"
     languageName: "English"
-    contentDir: "content/en"
     weight: 2
 
 caches:

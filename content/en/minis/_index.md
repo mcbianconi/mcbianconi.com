@@ -1,5 +1,0 @@
----
-title: Miniatures
----
-
-{{< gallery >}}

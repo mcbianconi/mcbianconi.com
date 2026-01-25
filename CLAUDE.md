@@ -23,7 +23,7 @@ deploy
 
 ## Architecture
 
-- **Theme**: `themes/zen` (git submodule) - Zen Hugo theme
+- **Theme**: `themes/zen` - Zen Hugo theme (regular files, not a submodule)
 - **Config**: `hugo.yaml` - site configuration
 - **Content**: `content/` - posts and pages
   - Portuguese: `*.md` files

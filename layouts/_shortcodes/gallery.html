@@ -1,5 +1,5 @@
 {{ $folder := .Get 0 }}
-{{ $pattern := printf "%s/*" $folder }}
+{{ $pattern := cond (eq $folder nil) "*" (printf "%s/*" $folder) }}
 <div class="gallery">
   {{ range .Page.Resources.Match $pattern }}
     {{ if eq .ResourceType "image" }}
