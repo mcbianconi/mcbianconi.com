@@ -3,12 +3,20 @@
 <div class="gallery">
   {{ range .Page.Resources.Match $pattern }}
     {{ if eq .ResourceType "image" }}
-      {{- $webp := .Process "webp" -}}
-      {{- $thumb := $webp.Resize "300x" -}}
+      {{- $full := .Process "webp" -}}
+      {{- $small := $full.Resize "300x" -}}
+      {{- $medium := $full.Resize "600x" -}}
+      {{- $large := $full.Resize "900x" -}}
       <figure>
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" />
-        <a href="{{ $webp.RelPermalink }}">open</a>
-        <figcaption>{{ .Title }}</figcaption>
+        <a href="{{ $full.RelPermalink }}" target="_blank">
+          <img
+            src="{{ $small.RelPermalink }}"
+            srcset="{{ $small.RelPermalink }} 300w, {{ $medium.RelPermalink }} 600w, {{ $large.RelPermalink }} 900w"
+            sizes="(max-width: 400px) 300px, (max-width: 800px) 600px, 900px"
+            alt="{{ .Title }}"
+            loading="lazy"
+          />
+        </a>
       </figure>
     {{ end }}
   {{ end }}
