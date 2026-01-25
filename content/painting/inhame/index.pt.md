@@ -1,4 +1,4 @@
 ---
 title: Inhame
-techniques: [digital]
+tecnicas: [digital]
 ---

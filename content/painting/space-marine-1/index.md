@@ -1,4 +1,4 @@
 ---
 title: Space Marine
-tecnicas: [miniatura]
+techniques: [miniature]
 ---

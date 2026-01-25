@@ -1,4 +1,4 @@
 ---
-title: Pinturas
-url: pinturas
+title: Paintings
+url: paintings
 ---

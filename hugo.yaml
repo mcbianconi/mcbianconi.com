@@ -1,10 +1,10 @@
 ---
-title: "Meu site"
+title: "My site"
 baseURL: "https://mcbianconi.com/"
 theme: "zen"
-languageCode: "pt"
+languageCode: "en"
 
-defaultContentLanguage: "pt"
+defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
 disableDefaultLanguageRedirect: false
 
@@ -25,7 +25,7 @@ outputs:
 
 params:
   contact: "contato@mcbianconi.com"
-  description: "Site pessoal do Murillo."
+  description: "Murillo's personal site."
   dateformat: "2 January, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true
@@ -43,14 +43,14 @@ params:
     avatar: "path/to/some-image.jpg"
 
 languages:
-  pt:
-    title: "Meu site"
-    languageName: "Português"
-    weight: 1
-
   en:
     title: "My site"
     languageName: "English"
+    weight: 1
+
+  pt:
+    title: "Meu site"
+    languageName: "Português"
     weight: 2
 
 taxonomies:

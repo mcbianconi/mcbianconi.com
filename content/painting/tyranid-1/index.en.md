@@ -1,4 +1,0 @@
----
-title: Tyranid
-techniques: [miniature]
----

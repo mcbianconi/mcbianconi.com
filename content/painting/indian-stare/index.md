@@ -1,4 +1,4 @@
 ---
 title: Indian Stare
-tecnicas: [aquarela]
+techniques: [watercolor]
 ---
