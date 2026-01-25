@@ -1,0 +1,4 @@
+---
+title: Pinturas
+url: pinturas
+---

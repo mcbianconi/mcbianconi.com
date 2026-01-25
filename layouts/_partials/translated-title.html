@@ -1,0 +1,8 @@
+{{- $title := .Title -}}
+{{- $lang := site.Language.Lang -}}
+{{- with index .Params.translations $lang -}}
+  {{- with .title -}}
+    {{- $title = . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $title -}}

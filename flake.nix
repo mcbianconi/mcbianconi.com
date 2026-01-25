@@ -28,19 +28,9 @@
             echo "Hugo $(hugo version | cut -d' ' -f2)"
             echo ""
             echo "Commands:"
-            echo "  dev        → http://localhost:1313"
+            echo "  dev        → hugo server -D --navigateToChanged"
             echo "  deploy     → commit + push"
             echo ""
-
-            dev() {
-              hugo server -D --navigateToChanged
-            }
-
-            deploy() {
-              git add -A
-              git commit -m "$(date '+%Y-%m-%d %H:%M') - atualização"
-              git push
-            }
           '';
         };
       }

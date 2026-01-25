@@ -4,6 +4,7 @@
 ### Hugo ###
 # Generated files by hugo
 /public/
+resources
 
 # Temporary lock file while building
 /.hugo_build.lock

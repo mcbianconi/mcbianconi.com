@@ -1,0 +1,15 @@
+{{ $folder := .Get 0 }}
+{{ $pattern := printf "%s/*" $folder }}
+<div class="gallery">
+  {{ range .Page.Resources.Match $pattern }}
+    {{ if eq .ResourceType "image" }}
+      {{- $webp := .Process "webp" -}}
+      {{- $thumb := $webp.Resize "300x" -}}
+      <figure>
+        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" />
+        <a href="{{ $webp.RelPermalink }}">open</a>
+        <figcaption>{{ .Title }}</figcaption>
+      </figure>
+    {{ end }}
+  {{ end }}
+</div>

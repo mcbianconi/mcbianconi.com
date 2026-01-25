@@ -1,0 +1,60 @@
+---
+title: "Meu site"
+baseURL: "https://mcbianconi.com/"
+theme: "zen"
+languageCode: "pt"
+
+defaultContentLanguage: "pt"
+defaultContentLanguageInSubdir: false
+disableDefaultLanguageRedirect: false
+
+pluralizelisttitles: true
+removePathAccents: true
+sectionPagesMenu: main
+
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "SearchIndex"]
+  section: ["HTML", "RSS"]
+
+params:
+  contact: "contato@mcbianconi.com"
+  description: "Site pessoal do Murillo."
+  dateformat: "2 January, 2006"
+  favicon: "apple-touch-icon.png"
+  feedlinks: true
+  icon: "apple-touch-icon.png"
+  image: "apple-touch-icon.png"
+  imageMaxWidth: 400
+  logoWidth: 64
+  mobileMenu: true
+  poweredby: false
+  sidebar: true
+  submitted: true
+  author:
+    name: "Murillo"
+    url: "https://mcbianconi.com/murillo"
+    avatar: "path/to/some-image.jpg"
+
+languages:
+  pt:
+    title: "Meu site"
+    languageName: "Português"
+    contentDir: "content/pt"
+    weight: 1
+
+  en:
+    title: "My site"
+    languageName: "English"
+    contentDir: "content/en"
+    weight: 2
+
+caches:
+  images:
+    dir: :cacheDir/images

@@ -4,35 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Hugo site (fresh installation).
+Personal website built with Hugo using the Zen theme. Multilingual site (Portuguese as default, English secondary).
 
-## Commands
+## Development Commands
+
+Requires Nix with flakes. Use `direnv allow` or `nix develop` to enter the dev shell.
 
 ```bash
-# Development server (includes drafts)
-make dev
+# Start dev server with drafts enabled
+dev                    # or: hugo server -D --navigateToChanged
 
-# Build static site
-make build
+# Build for production
+hugo --minify
 
-# Clean generated files
-make clean
-
-# Create new post
-make post
+# Deploy (commits all changes and pushes)
+deploy
 ```
-
-Deploy happens automatically via GitHub Actions on push to main.
 
 ## Architecture
 
-- **Config**: `hugo.toml` in root directory
-- **Content**: `content/` directory
-- **Themes**: Install themes in `themes/` directory
+- **Theme**: `themes/zen` (git submodule) - Zen Hugo theme
+- **Config**: `hugo.yaml` - site configuration
+- **Content**: `content/` - posts and pages
+  - Portuguese: `*.md` files
+  - English: `*.en.md` files
+- **i18n**: `i18n/` - translation strings (pt.toml, en.toml)
+- **Layouts**: `layouts/` - template overrides
+- **Assets**: `assets/sass/` - custom SCSS (\_custom.scss, \_extra.scss, \_fonts.scss, \_zen.scss)
 
-## Getting Started
+## Deployment
 
-1. Install a theme from https://themes.gohugo.io/ or create one with `hugo new theme <name>`
-2. Configure the theme in `hugo.toml`
-3. Create content with `hugo new content posts/my-post.md`
-4. Run `make dev` to start the development server
+GitHub Actions (`.github/workflows/hugo.yml`) automatically builds and deploys to GitHub Pages on push to main. Uses Hugo Extended v0.154.5.

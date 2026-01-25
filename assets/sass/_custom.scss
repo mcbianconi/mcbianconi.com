@@ -1,0 +1,34 @@
+:root {
+  /* Paleta */
+  --palette-sunflower: #ffc759;
+  --palette-petal: #ff7b9c;
+  --palette-glaucous: #607196;
+  --palette-slate: #babfd1;
+  --palette-platinum: #e8e9ed;
+  --palette-glaucous-dark: #4a5875;
+
+  /* Brand - Petal como protagonista */
+  --color-brand: var(--palette-petal);
+  --color-brand-alt: var(--palette-glaucous);
+  --color-brand-light: var(--palette-slate);
+  --color-brand-dark: var(--palette-glaucous-dark);
+
+  --color-accent: var(--palette-sunflower);
+
+  --color-link: var(--color-brand);
+  --color-link-hover: var(--color-brand-alt);
+  --color-link-active: var(--color-accent);
+
+  --color-button: var(--color-accent);
+  --color-button-hover: var(--color-brand);
+  --color-button-text: var(--color-brand-dark);
+
+  --color-headings: var(--color-brand-dark);
+
+  --color-highlight: var(--color-accent);
+  --color-mark-highlight: var(--color-accent);
+
+  --color-backdrop: var(--palette-platinum);
+  --color-grey-100: var(--palette-platinum);
+  --color-grey-300: var(--palette-slate);
+}
