@@ -32,3 +32,19 @@
   --color-grey-100: var(--palette-platinum);
   --color-grey-300: var(--palette-slate);
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
