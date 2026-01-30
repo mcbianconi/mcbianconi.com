@@ -1,18 +1,54 @@
 {{ define "main" -}}
-{{- $title := partial "translated-title.html" . -}}
 <main class="main layout__main">
-<article class="single-view{{ with .Section }} single-view--{{ . | urlize }}{{ end }}">
+<article class="single-view single-view--painting">
 <header>
-<h1 class="title{{ if $.Param "submitted" | default false }} mb--xxs{{ end }}">{{ $title }}</h1>
-{{ if $.Param "submitted" | default false }}{{ partial "submitted.html" . }}{{ end -}}
-{{ if .Params.tags }}{{ partial "tags.html" . }}{{ end -}}
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Params.tecnicas }}
+  <div class="painting__tecnicas">
+    {{ range . }}
+      <a href="{{ "/tecnicas/" | relLangURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>
+    {{ end }}
+  </div>
+{{ end }}
+{{ with .Params.techniques }}
+  <div class="painting__tecnicas">
+    {{ range . }}
+      <a href="{{ "/techniques/" | relLangURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>
+    {{ end }}
+  </div>
+{{ end }}
 </header>
 
-{{ .Content }}
+{{- $img := .Resources.GetMatch "cover.*" -}}
+{{ if $img }}
+  {{- $full := $img.Process "webp" -}}
+  {{- $large := $full.Resize "1200x" -}}
+  <figure class="painting__image">
+    <a href="{{ $full.RelPermalink }}" target="_blank">
+      <img
+        src="{{ $large.RelPermalink }}"
+        alt="{{ .Title }}"
+        loading="lazy"
+      />
+    </a>
+  </figure>
+{{ end }}
 
-{{ if ne .Lastmod .Date }}{{ partial "dates.html" . }}{{ end -}}
-{{ if site.Params.repository | default false }}{{ partial "repository-links.html" . }}{{ end -}}
-{{ if $.Param "relatedposts" | default false }}{{ partial "relatedposts.html" . }}{{ end -}}
+{{ if .Content }}
+<div class="painting__description">
+  {{ .Content }}
+</div>
+{{ end }}
+
+{{ if .Params.description }}
+<p class="painting__description">{{ .Params.description }}</p>
+{{ end }}
+
+<nav class="painting__nav">
+  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="painting__prev">← {{ .Title }}</a>{{ end }}
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}" class="painting__next">{{ .Title }} →</a>{{ end }}
+</nav>
+
 </article>
 </main>
 {{ end -}}

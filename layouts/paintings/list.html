@@ -10,10 +10,9 @@
   {{ range .Pages }}
     {{- $img := .Resources.GetMatch "cover.*" -}}
     {{ if $img }}
-      {{- $full := $img.Process "webp" -}}
-      {{- $small := $full.Resize "300x" -}}
-      {{- $medium := $full.Resize "600x" -}}
-      {{- $large := $full.Resize "900x" -}}
+      {{- $small := $img.Resize "300x webp" -}}
+      {{- $medium := $img.Resize "600x webp" -}}
+      {{- $large := $img.Resize "900x webp" -}}
       <figure class="gallery__item">
         <a href="{{ .RelPermalink }}">
           <img

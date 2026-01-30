@@ -1,0 +1,9 @@
+{{ if $.Param "feedlinks" }}{{ partial "feedlinks.html" . }}{{ end -}}
+<p>
+  <span class="version">
+    {{ with (index site.RegularPages 0).GitInfo }}{{ .AbbreviatedHash }}{{end}}
+  </span>
+</p>
+{{ with $.Param "footer" }}
+<p>{{ . | site.Home.RenderString }}</p>
+{{ end }}

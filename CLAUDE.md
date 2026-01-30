@@ -4,34 +4,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website built with Hugo using the Zen theme. Multilingual site (Portuguese as default, English secondary).
+Personal website built with Hugo static site generator using the Zen theme. Multilingual site (English and Portuguese) deployed to GitHub Pages.
 
 ## Development Commands
 
-Requires Nix with flakes. Use `direnv allow` or `nix develop` to enter the dev shell.
-
 ```bash
-# Start dev server with drafts enabled
-dev                    # or: hugo server -D --navigateToChanged
+# Start development server with drafts and auto-navigation
+hugo server -D --navigateToChanged
 
-# Build for production
+# Build for production (what CI does)
 hugo --minify
-
-# Deploy (commits all changes and pushes)
-deploy
 ```
+
+The project uses Nix flakes for development environment. Run `direnv allow` or `nix develop` to get Hugo available.
 
 ## Architecture
 
-- **Theme**: `themes/zen` - Zen Hugo theme (regular files, not a submodule)
-- **Config**: `hugo.yaml` - site configuration
-- **Content**: `content/` - posts and pages
-  - Portuguese: `*.md` files
-  - English: `*.en.md` files
-- **i18n**: `i18n/` - translation strings (pt.toml, en.toml)
-- **Layouts**: `layouts/` - template overrides
-- **Assets**: `assets/sass/` - custom SCSS (\_custom.scss, \_extra.scss, \_fonts.scss, \_zen.scss)
+### Content Structure
+- `content/painting/` - Gallery items with page bundles (each item has its own folder with index.md and images)
+- `content/posts/` - Blog posts
+- Multilingual content uses `.pt.md` suffix for Portuguese translations (e.g., `index.md` for English, `index.pt.md` for Portuguese)
+
+### Theme Customization
+The site uses the [Zen theme](https://github.com/frjo/hugo-theme-zen) (v5.x, requires Hugo Extended 0.146.0+).
+
+Custom overrides:
+- `layouts/` - Template overrides (follows theme's new structure from v5)
+- `assets/sass/_custom.scss` - CSS variable overrides and custom styles
+- `assets/sass/_extra.scss` - Sass variable overrides (loaded first)
+- `assets/sass/_zen.scss` - Override theme's default styles
+- `i18n/` - Translation strings
+
+### Configuration
+- `hugo.yaml` - Main configuration with multilingual setup and custom taxonomies (`tecnica`/`technique` for paintings)
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/hugo.yml`) automatically builds and deploys to GitHub Pages on push to main. Uses Hugo Extended v0.154.5.
+Automatic deployment via GitHub Actions on push to `main`. The workflow in `.github/workflows/hugo.yml` builds with Hugo Extended 0.154.5 and deploys to GitHub Pages.
