@@ -1,3 +1,4 @@
+# https://github.com/frjo/hugo-theme-zen?tab=readme-ov-file#configuration
 ---
 title: "My site"
 baseURL: "https://mcbianconi.com/"
@@ -43,6 +44,9 @@ params:
     name: "Murillo"
     url: "https://mcbianconi.com/murillo"
     avatar: "path/to/some-image.jpg"
+  relatedPosts: true
+  alpine: false
+  cookieConsent: true
 
 languages:
   en:
